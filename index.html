@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script defer src="js/script.js" type="module"></script>
+		<title>Draw matrix</title>
+	</head>
+	<body>
+		<main class="container">
+			<div class="settings_wrapper">
+				<form class="settings">
+					<div class="settings__set">
+						<label for="col" class="settings__set__label">columns:</label>
+						<input
+							type="number"
+							min="2"
+							step="1"
+							name="col"
+							value="10"
+							class="settings__set__value columns_input"
+						/>
+					</div>
+					<div class="settings__set">
+						<label for="row" class="settings__set__label">rows:</label>
+						<input
+							type="number"
+							min="2"
+							step="1"
+							name="row"
+							value="10"
+							class="settings__set__value rows_input"
+						/>
+					</div>
+					<div class="settings__set">
+						<label for="val" class="settings__set__label">values:</label>
+						<input
+							type="number"
+							min="2"
+							step="1"
+							name="val"
+							value="2"
+							class="settings__set__value values_input"
+						/>
+					</div>
+				</form>
+				<button class="btn btn_create">Create</button>
+			</div>
+
+			<div class="drawing_wrapper hidden">
+				<div class="drawing_board"></div>
+
+				<ul class="values"></ul>
+
+				<div class="buttons">
+					<button class="btn btn_copy">Copy</button>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
